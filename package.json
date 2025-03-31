@@ -1,0 +1,31 @@
+{
+  "name": "sqlrunner",
+  "version": "1.0.0",
+  "description": "Aplicação web para executar arquivos no formato .sql em um banco de dados. Esses arquivos devem ser carregados via upload na interface gráfica.",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon --exec ts-node ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otaviozerotwo/SQLRunner.git"
+  },
+  "author": "Otávio Cardoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otaviozerotwo/SQLRunner/issues"
+  },
+  "homepage": "https://github.com/otaviozerotwo/SQLRunner#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.14.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.14",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
