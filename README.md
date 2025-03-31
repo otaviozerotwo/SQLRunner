@@ -35,9 +35,11 @@ Analistas de Sistemas e DBA que necessitem aplicar atualizações em banco de da
 
 - PostgreSQL
 - React
+- JavaScript (ES6+)
 - Node.js
 - TypeScript
 - Express
+- TypeORM
 
 ## 📂 Estrutura do Projeto
 
