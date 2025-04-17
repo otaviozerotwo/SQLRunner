@@ -1,12 +1,17 @@
 import 'dotenv/config';
 import express from 'express';
+import { Request, Response } from 'express';
 import { AppDataSource } from './data-source';
-const PORT = process.env.NODE_PORT;
+// const PORT = process.env.NODE_PORT;
 
 AppDataSource.initialize()
   .then(() => {
-    console.log('Conexão com o banco de dados estabelecida!');
+    const app = express();
+
+    app.use(express.json());
+
+    // app.get('/', (req: Request, res: Response): Promise<void> => {
+    //   res.json('deu certo');
+      
+    // })
   })
-  .catch((error) => {
-    console.error('Erro ao conectar ao banco:', error);
-  });
